@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .demo-box form{display:grid;gap:12px;max-width:420px;}
+  .demo-box label{font-weight:600;font-size:.9rem;}
+  .demo-box input,.demo-box select{padding:8px;border:1px solid var(--border);border-radius:6px;}
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-badge">DK</div>
+    <div class="titles"><h1>HTML Programs</h1><p>Lakshmi Deepak &bull; Section 7</p></div>
+  </header>
+  <main>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="index.html">Back to HTML Programs</a>
+    </div>
+    <div class="program-page">
+      <h1>5. Student Registration Form</h1>
+      <p class="desc">Demonstrates common HTML form elements.</p>
+
+      <div class="demo-box">
+        <form onsubmit="alert('Form submitted (demo only)'); return false;">
+          <div>
+            <label for="name">Full Name</label><br>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label>Gender</label><br>
+            <input type="radio" id="male" name="gender" value="male"><label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female"><label for="female">Female</label>
+          </div>
+          <div>
+            <label for="course">Course</label><br>
+            <select id="course" name="course">
+              <option>Computer Science</option>
+              <option>Electronics</option>
+              <option>Mechanical</option>
+            </select>
+          </div>
+          <div>
+            <input type="checkbox" id="terms" required>
+            <label for="terms">I agree to the terms</label>
+          </div>
+          <button class="btn" type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">&copy; 2026 Lakshmi Deepak &mdash; Section 7</footer>
+</body>
+</html>

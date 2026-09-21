@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Selectors, Colors, Fonts, Margins, Padding, Borders</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .demo-box p{margin:10px 0;padding:8px;border:2px solid #ccc;}
+  .demo-box #idbox{background:#fde68a;border-color:#f59e0b;}
+  .demo-box .classbox{background:#bbf7d0;border-color:#10b981;}
+  .demo-box p:nth-of-type(1){font-family:Georgia,serif;}
+  .demo-box p:nth-of-type(2){font-family:'Courier New',monospace;}
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-badge">DK</div>
+    <div class="titles"><h1>HTML Programs</h1><p>Lakshmi Deepak &bull; Section 7</p></div>
+  </header>
+  <main>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="index.html">Back to HTML Programs</a>
+    </div>
+    <div class="program-page">
+      <h1>12. CSS Selectors, Colors, Fonts, Margins, Padding &amp; Borders</h1>
+      <p class="desc">Demonstrates element, class, ID selectors along with font, color, margin, padding, and border styling.</p>
+
+      <div class="demo-box">
+        <p>Styled using an element selector with a serif font.</p>
+        <p>Styled using an element selector with a monospace font.</p>
+        <p id="idbox">Styled using an ID selector (#idbox) — yellow background.</p>
+        <p class="classbox">Styled using a class selector (.classbox) — green background.</p>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">&copy; 2026 Lakshmi Deepak &mdash; Section 7</footer>
+</body>
+</html>

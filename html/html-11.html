@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Internal and External CSS</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  /* internal CSS just for this demo box */
+  .demo-box .internal-styled{
+    color:#4f46e5;
+    font-weight:bold;
+    background:#eef0fb;
+    padding:10px;
+    border-radius:6px;
+  }
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-badge">DK</div>
+    <div class="titles"><h1>HTML Programs</h1><p>Lakshmi Deepak &bull; Section 7</p></div>
+  </header>
+  <main>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="index.html">Back to HTML Programs</a>
+    </div>
+    <div class="program-page">
+      <h1>11. Internal and External CSS Styling</h1>
+      <p class="desc">This page uses external CSS (assets/style.css, linked via &lt;link&gt;) for overall layout, and internal CSS (a &lt;style&gt; block in the &lt;head&gt;) for the highlighted box below. Inline CSS is shown too.</p>
+
+      <div class="demo-box">
+        <p class="internal-styled">This text is styled using internal CSS defined in a &lt;style&gt; tag.</p>
+        <p style="color:#b91c1c;font-style:italic;">This text is styled using inline CSS via the style attribute.</p>
+        <p>This paragraph uses only external CSS from assets/style.css for its base font and color.</p>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">&copy; 2026 Lakshmi Deepak &mdash; Section 7</footer>
+</body>
+</html>

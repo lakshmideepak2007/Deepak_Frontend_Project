@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Webpage — Media Queries</title>
+<link rel="stylesheet" href="../assets/style.css">
+<style>
+  .demo-box .responsive-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:12px;
+  }
+  .demo-box .responsive-grid div{
+    background:#eef0fb;padding:16px;border-radius:8px;text-align:center;
+  }
+  @media (max-width:600px){
+    .demo-box .responsive-grid{grid-template-columns:1fr;}
+    .demo-box .responsive-grid div{background:#fde68a;}
+  }
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-badge">DK</div>
+    <div class="titles"><h1>HTML Programs</h1><p>Lakshmi Deepak &bull; Section 7</p></div>
+  </header>
+  <main>
+    <div class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="index.html">Back to HTML Programs</a>
+    </div>
+    <div class="program-page">
+      <h1>13. Responsive Webpage Using Media Queries</h1>
+      <p class="desc">The 3-column grid below collapses to a single column (and turns yellow) on screens narrower than 600px. Resize your browser to see the effect.</p>
+
+      <div class="demo-box">
+        <div class="responsive-grid">
+          <div>Box 1</div>
+          <div>Box 2</div>
+          <div>Box 3</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">&copy; 2026 Lakshmi Deepak &mdash; Section 7</footer>
+</body>
+</html>
